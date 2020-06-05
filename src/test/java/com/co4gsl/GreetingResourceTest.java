@@ -10,7 +10,7 @@ import static org.hamcrest.CoreMatchers.is;
 public class GreetingResourceTest {
 
     @Test
-    public void testHelloEndpoint() {
+    public void testGreetingEndpoint() {
         given()
           .when().get("/greeting")
           .then()
@@ -18,4 +18,12 @@ public class GreetingResourceTest {
              .body(is("Bonjour!!"));
     }
 
+    @Test
+    public void testAsyncGreetingEndpoint() {
+        given()
+                .when().get("/greeting/async")
+                .then()
+                .statusCode(200)
+                .body(is("Hi I'm async Bonjour!!"));
+    }
 }
