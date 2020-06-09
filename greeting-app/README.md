@@ -1,9 +1,16 @@
-# quarkus-app project
+# greeting-app project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+This app exposes following endpoints;
+```
+/greeting           -This returns the configured greeting
+/greeting/async     -This returns the async greeting
+/greeting/remote    -This returns the greeting from remote-app or fallback greeting in case remote-app is down.
 
+/developer          -GET this returns list of devvelopers from mysql table
+/developer          -POST this creates/add a new developer to mysql
+```
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:

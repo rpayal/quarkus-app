@@ -2,6 +2,10 @@
 
 This is run as separate application. Need to compile it in native mode.
 
+This app exposes following endpoints;
+```
+/remote-greeting           -This returns the configured greeting
+```
 ## Running the application in dev mode
 
 You can run your application as:
