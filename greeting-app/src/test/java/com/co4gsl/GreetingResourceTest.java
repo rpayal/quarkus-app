@@ -50,4 +50,14 @@ public class GreetingResourceTest {
                 .statusCode(200)
                 .body(is("Remote Greeting!!"));
     }
+
+//    @Test
+//    public void testRemoteFallbackGreetingEndpoint() {
+//        Mockito.when(greetingClient.remoteGreeting()).thenThrow();
+//        given()
+//                .when().get("/greeting/remote")
+//                .then()
+//                .statusCode(200)
+//                .body(is("Namaste!!"));
+//    }
 }
